@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="80%" viewBox="0 0 600 800">
+<circle cx="25" cy="50" r="25"  fill="yellow">
+<animate attributeName="cx" from="25" to="400" dur="2s" inf/>
+</circle>
+<polygon points="51 30 51 70 26 50" fill="black">
+<animate attributeName="opacity" from="2" to="0" dur="0.25s" repeatCount="indefinite"/>
+<animate attributeName="opacity" from="0" to="2" dur="0.25s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" attributeType="XML"type="translate" from="0" to="400" dur="2.12s"/>
+</polygon>
+<circle cx="50" cy="50" r="5" fill="white" opacity="0.5">
+<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="one" />
+</circle>
+<circle cx="75" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="two" begin="one.end"/>
+</circle>
+<circle cx="100" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="three" begin="two.end"/>
+</circle>
+<circle cx="125" cy="50" r="10" fill="white" opacity="0.5">
+<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="four" begin="three.end"/>
+</circle>
+<circle cx="150" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="five" begin="four.end"/>
+</circle>
+<circle cx="175" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="six" begin="five.end"/>
+</circle>
+<circle cx="200" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="seven" begin="six.end"/>
+</circle>
+<circle cx="225" cy="50" r="10" fill="white" opacity="0.5">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="eight" begin="seven.end"/>
+</circle>
+<circle cx="250" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="nine" begin="eight.end"/>
+</circle>
+<circle cx="275" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="ten" begin="nine.end"/>
+</circle>
+<circle cx="300" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="eleven" begin="ten.end"/>
+</circle>
+<circle cx="325" cy="50" r="10" fill="white" opacity="0.5">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="twelve" begin="eleven.end"/>
+</circle>
+<circle cx="350" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" id="thirteen" begin="twelve.end"/>
+</circle>
+<circle cx="375" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.2s" fill="freeze" id="fourteen" begin="thirteen.end"/>
+</circle>
+<circle cx="400" cy="50" r="5" fill="white">
+<animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" begin="fourteen.end" />
+</circle>
+<text x="150" y="170" font-family="Press Start 2P" font-size="50" fill="yellow">Pacman
+</text>
+<text x="0" y="225" font-family="Press Start 2P" font-size="9" fill="yellow">I did my project on Pacman.I was just scrolling on the internet
+</text>
+<text x="0" y="250" font-family="Press Start 2P" font-size="9" fill="yellow">looking at gifs then I saw really cool Pacman gifs in a website.
+</text>
+<text x="0" y="275" font-family="Press Start 2P" font-size="9" fill="yellow">This Pacman game was created by Toru Iwatani, a game designer who
+</text>
+<text x="0" y="300" font-family="Press Start 2P" font-size="9" fill="yellow">created multiple games in the 80's.This game has evolved throughout
+</text>
+<text x="0" y="325" font-family="Press Start 2P" font-size="9" fill="yellow">the years and is one of my favorite 8-bit games I have ever played.
+</text>
+<rect x="0" y="0" width="400" height="10" fill="#5533FF">
+</rect>
+<rect x="0" y="90" width="400" height="10" fill="#5533FF">
+</rect>
+</svg>
+</body>
+</html>
