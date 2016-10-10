@@ -7,7 +7,7 @@
 <body>
 <svg width="80%" viewBox="0 0 600 800">
 <circle cx="25" cy="50" r="25"  fill="yellow">
-<animate attributeName="cx" from="25" to="400" dur="2s" inf/>
+<animate attributeName="cx" from="25" to="400" dur="2s"/>
 </circle>
 <polygon points="51 30 51 70 26 50" fill="black">
 <animate attributeName="opacity" from="2" to="0" dur="0.25s" repeatCount="indefinite"/>
@@ -60,6 +60,8 @@
 <animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" begin="fourteen.end" />
 </circle>
 <text x="150" y="170" font-family="Press Start 2P" font-size="50" fill="yellow">Pacman
+  <animate attributeName="opacity" from="2" to="0" begin="mouseover" dur="0.50s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" from="0" to="2" begin="mouseover" dur="0.50s" repeatCount="indefinite"/>
 </text>
 <text x="0" y="225" font-family="Press Start 2P" font-size="9" fill="yellow">I did my project on Pacman.I was just scrolling on the internet
 </text>
