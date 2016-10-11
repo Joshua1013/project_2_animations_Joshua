@@ -7,15 +7,15 @@
 <body>
 <svg width="80%" viewBox="0 0 600 800">
 <circle cx="25" cy="50" r="25"  fill="yellow">
-<animate attributeName="cx" from="25" to="400" dur="2s"/>
+<animate attributeName="cx" from="25" to="400" dur="2s" id="ok" begin="click" />
 </circle>
 <polygon points="51 30 51 70 26 50" fill="black">
-<animate attributeName="opacity" from="2" to="0" dur="0.25s" repeatCount="indefinite"/>
-<animate attributeName="opacity" from="0" to="2" dur="0.25s" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" attributeType="XML"type="translate" from="0" to="400" dur="2.12s"/>
+<animate attributeName="opacity" from="2" to="0" dur="0.25s"  begin="ok.begin" repeatCount="20" />
+<animate attributeName="opacity" from="0" to="2" dur="0.25s"  begin="ok.begin" repeatCount="20"  />
+<animateTransform attributeName="transform" attributeType="XML"type="translate"  begin="ok.begin" from="0" to="400" dur="2.12s"/>
 </polygon>
 <circle cx="50" cy="50" r="5" fill="white" opacity="0.5">
-<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="one" />
+<animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="one" begin="ok.begin"/>
 </circle>
 <circle cx="75" cy="50" r="5" fill="white">
 <animate attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" id="two" begin="one.end"/>
@@ -59,10 +59,6 @@
 <circle cx="400" cy="50" r="5" fill="white">
 <animate attributeName="opacity" from="1" to="0" dur="0.15s" fill="freeze" begin="fourteen.end" />
 </circle>
-<text x="150" y="170" font-family="Press Start 2P" font-size="50" fill="yellow">Pacman
-  <animate attributeName="opacity" from="2" to="0" begin="mouseover" dur="0.50s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" from="0" to="2" begin="mouseover" dur="0.50s" repeatCount="indefinite"/>
-</text>
 <text x="0" y="225" font-family="Press Start 2P" font-size="9" fill="yellow">I did my project on Pacman.I was just scrolling on the internet
 </text>
 <text x="0" y="250" font-family="Press Start 2P" font-size="9" fill="yellow">looking at gifs then I saw really cool Pacman gifs in a website.
@@ -74,9 +70,19 @@
 <text x="0" y="325" font-family="Press Start 2P" font-size="9" fill="yellow">the years and is one of my favorite 8-bit games I have ever played.
 </text>
 <rect x="0" y="0" width="400" height="10" fill="#5533FF">
+  <animate attributeName="opacity" from="2" to="0" dur="0.50s" repeatcount="indefinite"/>
+  <animate attributeName="opacity" from="0" to="2" dur="0.50s" repeatcount="indefinite"/>
 </rect>
 <rect x="0" y="90" width="400" height="10" fill="#5533FF">
+  <animate attributeName="opacity" from="2" to="0" dur="0.50s" repeatcount="indefinite"/>
+  <animate attributeName="opacity" from="0" to="2" dur="0.50s" repeatcount="indefinite"/>
 </rect>
+  <ellipse cx="285" cy="145" rx="170" ry="50" fill="yellow" opacity="0.2"/>
+</ellipse>
+<text x="150" y="170" font-family="Press Start 2P" font-size="45" fill="yellow">Pacman
+  <animate attributeName="opacity" from="2" to="0" begin="click" dur="0.50s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" from="0" to="2" begin="click" dur="0.50s" repeatCount="indefinite"/>
+</text>
 </svg>
 </body>
 </html>
